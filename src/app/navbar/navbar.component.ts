@@ -7,6 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  menus = [
+    {
+      name:"Home",
+      link:"#",
+      disabled:false
+    },
+    {
+      name:"Google",
+      link:"http://www.google.com",
+      disabled:false
+    }
+  ]
+
   constructor() { }
 
   ngOnInit() {
