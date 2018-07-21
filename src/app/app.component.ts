@@ -8,7 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Ng-Starter';
 
-  debugx(event:KeyboardEvent){
-    console.log("Press... "+event.key);
+  debugx(event){
+    let val = event.target.value;
+    this.title = val
+    console.log(val);
   }
 }
